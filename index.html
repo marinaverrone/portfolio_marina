@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/responsivity.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Marina Verrone Brandão</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-holder">
+                <ul class="navigation">
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#jobs">Projetos</a></li>
+                </ul>
+                <ul class="settings">
+                    <li><button id="audio-toggle-button" onclick="toggleVideoAudio()">🔊</button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="video-container">
+            <div class="page-title">
+                <h1>
+                    Marina Verrone Brandão
+                </h1>
+                <p>
+                    Audiovisual & Web Designer
+                </p>
+            </div>
+            <div class="video-holder">
+                <video id="highlight" src="./assets/videos/curta.mp4" autoplay muted loop></video>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+
+        <div class="section-header">
+            <p>Sobre Mim</p>
+        </div>
+
+        <div class="about-holder">
+
+            <div class="author-pic">
+                <img src="./assets/thumbs/marina.jpg" />
+            </div>
+
+            <div class="author-desc">
+                <p>
+                    &nbsp;&nbsp;Olá, meu nome é Marina Verrone Brandão e sou uma estudante de cinema com 18 anos de idade. Desde sempre, tive a paixão por contar histórias, especialmente por meio de imagens em movimento. Por isso, decidi seguir o caminho do cinema e audiovisual para me aprimorar e desenvolver minhas habilidades nesta área. 
+                </p>
+                <p>
+                    &nbsp;&nbsp;Durante minha jornada acadêmica, tenho buscado oportunidades para me aprofundar no universo cinematográfico e aprender com profissionais experientes. Além disso, sou uma ávida leitora de romances e poesia, o que me inspira a criar personagens e histórias mais ricas e profundas.
+                </p>
+                <p>
+                    &nbsp;&nbsp;Como entusiasta de fotografia, gosto de explorar a cidade em busca de novos ângulos e perspectivas para minhas fotos, o que me ajuda a treinar meu olhar criativo e aprimorar minha técnica. 
+                </p>
+                <p>
+                    &nbsp;&nbsp;Estou sempre em busca de novas oportunidades para me desenvolver e aprimorar minhas habilidades como cineasta. Se você está procurando uma pessoa dedicada, criativa e apaixonada pelo cinema, eu sou a candidata perfeita para seu projeto.
+                </p>
+
+                <span>
+                    <p>- Redes sociais -</p>
+                    <ul>
+                        <li><i class="fa fa-instagram" style="font-size:16px"></i><a href="https://www.instagram.com/marina.verronne/" target="_blank">Instagram</a></li>
+                        <li><i class="fa fa-envelope" style="font-size:16px"></i><a href="mailto:marinavb1307@gmail.com" target="_blank">Email</a></li>
+                    </ul>
+                </span>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    
+    <section class="section" id="jobs">
+
+        <div class="section-header">
+            <p>Projetos</p>
+        </div>
+
+        <div class="inner-card-container" id="job1">
+            <div class="inner-card">
+                <div class="inner-card-header">
+                    <div class="exit">
+                        <p onclick="closeInnerCard('job1')">X</p>
+                    </div>
+                    <video src="./assets/videos/curta.mp4" controls></video>
+                </div>
+                <div class="inner-card-description">
+                    <div class="inner-card-title-holder">
+                        <p>Pandemia</p>
+                    </div>
+                    <div class="inner-card-desc-holder">
+                        <p>
+                            Trabalho da faculdade: O professor passou um storyboard com alguns takes de torneia e tivemos que adaptar e criar uma história em volta disso. Escolhi por abordar o tema de pandemia, juntando imagens e efeitos sonoros. Busquei representar a dor e agonia de não poder ver aqueles que amamos, de não poder mais se conectar com a natureza e o ar livre.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="inner-card-container" id="job2">
+            <div class="inner-card">
+                <div class="inner-card-header">
+                    <div class="exit">
+                        <p onclick="closeInnerCard('job2')">X</p>
+                    </div>
+                    <video src="./assets/videos/curta2.mov" controls></video>
+                </div>
+                <div class="inner-card-description">
+                    <div class="inner-card-title-holder">
+                        <p>Sozinhos</p>
+                    </div>
+                    <div class="inner-card-desc-holder">
+                        <p>
+                            Trabalho da faculdade
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="inner-card-container" id="job3">
+            <div class="inner-card">
+                <div class="inner-card-header">
+                    <div class="exit">
+                        <p onclick="closeInnerCard('job3')">X</p>
+                    </div>
+                    <video src="./assets/videos/curta3.mp4" controls></video>
+                </div>
+                <div class="inner-card-description">
+                    <div class="inner-card-title-holder">
+                        <p>Fuga</p>
+                    </div>
+                    <div class="inner-card-desc-holder">
+                        <p>
+                            Trabalho da faculdade
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="jobs-holder">
+            <div class="job-card" onclick="showInnerCard('job1')">
+                <div class="job-card-title-holder">
+                    <p class="job-card-title">
+                        Pandemia
+                    </p>
+                </div>
+                <div class="job-card-background">
+                    <img src="./assets/thumbs/curta1.png"/>
+                </div>
+            </div>
+            <div class="job-card" onclick="showInnerCard('job2')">
+                <div class="job-card-title-holder">
+                    <p class="job-card-title">
+                        Sozinhos
+                    </p>
+                </div>
+                <div class="job-card-background">
+                    <img src="./assets/thumbs/curta2.png"/>
+                </div>
+            </div>
+            <div class="job-card" onclick="showInnerCard('job3')">
+                <div class="job-card-title-holder">
+                    <p class="job-card-title">
+                        Fuga
+                    </p>
+                </div>
+                <div class="job-card-background">
+                    <img src="./assets/thumbs/curta3.png"/>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./scripts/highlight.js"></script>
+    <script src="./scripts/job-card.js"></script>
+</body>
+</html>

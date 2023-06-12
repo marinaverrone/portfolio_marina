@@ -1,0 +1,44 @@
+@media only screen and (min-width: 320px) {
+    .job-card {
+        width: 100%;
+    }
+
+    .about-holder {
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .job-card {
+        width: 50%;
+    }
+
+    .about-holder {
+        flex-direction: column;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .job-card {
+        width: 25%;
+    }
+
+    .about-holder {
+        font-size: 1.6rem;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .job-card {
+        width: 25%;
+    }
+
+    .about-holder {
+        font-size: 1.6rem;
+    }
+}
