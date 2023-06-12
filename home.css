@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+
+html, body {
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+header nav {
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+}
+
+.menu-holder {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-holder > ul {
+    display: flex;
+    gap: 1.6rem;
+    padding: 0px 1.2rem;
+}
+
+.menu-holder ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 1.6rem 1.2rem;
+    font-size: 1.6rem;
+}
+
+.menu-holder ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-holder ul li button {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -.3rem;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container .page-title {
+    position: absolute;
+    z-index: 3;
+    font-size: 3.2rem;
+    text-align: center;
+    font-family: 'Quicksand';
+}
+
+.video-container .page-title h1 {
+    font-weight: lighter;
+}
+
+.video-container .page-title p {
+    font-weight: lighter;
+}
+
+.video-container .video-holder {
+    width: 100%;
+    height: 100%;
+}
+
+.video-container .video-holder video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(20%);
+}
+
+.job-card {
+    width: 30%;
+    min-width: 200px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background: #000;
+}
+
+.job-card:hover .job-card-background{
+    filter: brightness(40%);
+}
+
+.job-card-title-holder {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+.job-card-title {
+    font-size: 3.2rem;
+}
+
+.job-card-subtitle {
+    font-size: 1.6rem;
+    opacity: .4;
+}
+
+.job-card-background {
+    font-size: 1.6rem;
+    opacity: .4;
+    filter: brightness(80%);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: .20s ease-in-out;
+}
+
+.job-card-background img {
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: -3px;
+    padding: 10px;
+}
+
+.section-header {
+    margin-top: 30px;
+    padding: 10px;
+    font-size: 3.2rem;
+}
+
+.jobs-holder {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inner-card-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-card {
+    background: white;
+    padding: 10px;
+    color: #333;
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inner-card-title-holder {
+    width: 100%;
+    margin-bottom: 4px;
+}
+
+.inner-card-title-holder p {
+    font-size: 2.4rem;
+}
+
+.inner-card-desc-holder {
+    width: 100%;
+    overflow: hidden;
+}
+
+.inner-card-desc-holder p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+.inner-card-header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.inner-card video {
+    width: 100%;
+    object-fit: fill;
+}
+
+.exit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+
+.exit p {
+    cursor: pointer;
+}
+
+.about-holder {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    height: 100%;
+}
+
+.about-holder .author-pic {
+    width: 45%;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.about-holder .author-pic img {
+    width: 100%;
+}
+
+.about-holder .author-desc {
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.about-holder span {
+    margin-top: 8px;
+}
+
+.about-holder p {
+    font-weight: bolder;
+}
+
+.about-holder span ul {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about-holder span ul li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.about-holder span ul li a{
+    text-decoration: none;
+    color: pink;
+}
+
+.about-holder span ul li a:hover{
+    text-decoration: underline;
+}
